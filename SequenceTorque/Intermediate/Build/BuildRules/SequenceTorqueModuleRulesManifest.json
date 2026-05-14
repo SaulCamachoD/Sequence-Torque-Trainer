@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\UnrealEngineGames\\TrainBeyondTest\\Sequence Torque Training\\SequenceTorque\\Source\\SequenceTorque\\SequenceTorque.Build.cs",
+		"C:\\UnrealEngineGames\\TrainBeyondTest\\Sequence Torque Training\\SequenceTorque\\Source\\SequenceTorque.Target.cs",
+		"C:\\UnrealEngineGames\\TrainBeyondTest\\Sequence Torque Training\\SequenceTorque\\Source\\SequenceTorqueEditor.Target.cs"
+	],
+	"EngineVersion": "5.7.4"
+}

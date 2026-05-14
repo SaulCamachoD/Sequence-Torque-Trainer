@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "SequenceTorque",
+			"Path": "..\\Source\\SequenceTorque.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "SequenceTorqueEditor",
+			"Path": "..\\Source\\SequenceTorqueEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
