@@ -1,8 +1,0 @@
-{
-	"SourceFiles": [
-		"C:\\UnrealEngineGames\\TrainBeyondTest\\Sequence Torque Trainer\\SequenceTorqueT\\Source\\SequenceTorqueT\\SequenceTorqueT.Build.cs",
-		"C:\\UnrealEngineGames\\TrainBeyondTest\\Sequence Torque Trainer\\SequenceTorqueT\\Source\\SequenceTorqueT.Target.cs",
-		"C:\\UnrealEngineGames\\TrainBeyondTest\\Sequence Torque Trainer\\SequenceTorqueT\\Source\\SequenceTorqueTEditor.Target.cs"
-	],
-	"EngineVersion": "5.7.4"
-}
