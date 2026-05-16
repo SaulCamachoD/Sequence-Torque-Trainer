@@ -1,0 +1,24 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unrealenginegames\\trainbeyondtest\\sequence torque training\\sequencetorque\\source\\sequencetorque\\private\\gameplay\\bop.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unrealenginegames\\trainbeyondtest\\sequence torque training\\sequencetorque\\intermediate\\build\\win64\\x64\\sequencetorqueeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\unrealenginegames\\trainbeyondtest\\sequence torque training\\sequencetorque\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\sequencetorque\\definitions.sequencetorque.h",
+            "c:\\unrealenginegames\\trainbeyondtest\\sequence torque training\\sequencetorque\\source\\sequencetorque\\public\\gameplay\\bop.h",
+            "c:\\unrealenginegames\\trainbeyondtest\\sequence torque training\\sequencetorque\\intermediate\\build\\win64\\unrealeditor\\inc\\sequencetorque\\uht\\bop.generated.h",
+            "c:\\unrealenginegames\\trainbeyondtest\\sequence torque training\\sequencetorque\\source\\sequencetorque\\public\\data\\boltsequencedata.h",
+            "c:\\unrealenginegames\\trainbeyondtest\\sequence torque training\\sequencetorque\\intermediate\\build\\win64\\unrealeditor\\inc\\sequencetorque\\uht\\boltsequencedata.generated.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetmathlibrary.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\kismetmathlibrary.generated.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetmathlibrary.inl",
+            "c:\\unrealenginegames\\trainbeyondtest\\sequence torque training\\sequencetorque\\source\\sequencetorque\\public\\gameplay\\abolt.h",
+            "c:\\unrealenginegames\\trainbeyondtest\\sequence torque training\\sequencetorque\\source\\sequencetorque\\public\\interfaces\\interactableinterface.h",
+            "c:\\unrealenginegames\\trainbeyondtest\\sequence torque training\\sequencetorque\\intermediate\\build\\win64\\unrealeditor\\inc\\sequencetorque\\uht\\interactableinterface.generated.h",
+            "c:\\unrealenginegames\\trainbeyondtest\\sequence torque training\\sequencetorque\\intermediate\\build\\win64\\unrealeditor\\inc\\sequencetorque\\uht\\abolt.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

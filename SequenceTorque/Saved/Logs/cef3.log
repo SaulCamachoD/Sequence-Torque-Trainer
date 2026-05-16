@@ -1,10 +1,9 @@
-[14132:33232:0514/203822.563:WARNING:chrome_main_delegate.cc(745)] This is Chrome version 128.0.6613.138 (not a warning)
-[14132:13492:0514/203822.594:ERROR:google_update_settings.cc(265)] Failed opening key Software\Chromium to set usagestats; result: 5
-[14132:33232:0514/203822.615:WARNING:account_consistency_mode_manager.cc(77)] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
-[41412:38432:0514/203827.117:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame 5-F3A242455072CA88FBE6FD17B9F24CB6 will be ignored
-[44344:16944:0514/203829.454:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
-[14132:41100:0514/203829.562:ERROR:cast_crl.cc(443)] CRL - Verification failed.
-[44344:16944:0514/203830.119:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
-[44344:16944:0514/203838.122:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -107
-[44344:16944:0514/203848.456:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
-[14132:33232:0514/204432.288:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
+[9444:5164:0515/193445.649:WARNING:chrome_main_delegate.cc(745)] This is Chrome version 128.0.6613.138 (not a warning)
+[9444:35188:0515/193445.685:ERROR:google_update_settings.cc(265)] Failed opening key Software\Chromium to set usagestats; result: 5
+[9444:5164:0515/193445.706:WARNING:account_consistency_mode_manager.cc(77)] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
+[3032:15828:0515/193449.883:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame 5-BDD97F8CB279F42A0609333DA1180A2B will be ignored
+[11092:38956:0515/193452.219:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[9444:22228:0515/193452.329:ERROR:cast_crl.cc(443)] CRL - Verification failed.
+[11092:38956:0515/193452.886:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[11092:38956:0515/193500.485:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -107
+[11092:38956:0515/193510.575:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100

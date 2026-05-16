@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SequenceTorqueModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87fcd55626193faa0bad87f62eb2a8037fd371a6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b5874de3a2e82b383605d4ca0e585979edd035e")]
 [assembly: System.Reflection.AssemblyProductAttribute("SequenceTorqueModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SequenceTorqueModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

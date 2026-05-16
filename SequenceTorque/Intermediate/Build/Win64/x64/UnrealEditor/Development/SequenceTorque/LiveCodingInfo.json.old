@@ -1,0 +1,13 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.SequenceTorque.gen.cpp.obj": [
+			"ABolt.gen.cpp.obj",
+			"BoltSequenceData.gen.cpp.obj",
+			"BOP.gen.cpp.obj",
+			"BOPPlayerController.gen.cpp.obj",
+			"InteractableInterface.gen.cpp.obj",
+			"SequenceTorque.init.gen.cpp.obj"
+		]
+	}
+}

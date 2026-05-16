@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -29,6 +30,72 @@
     <Filter Include="Source\SequenceTorque">
       <UniqueIdentifier>{4190A027-1607-3184-9FE0-3D9A774802E8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\SequenceTorque\Private">
+      <UniqueIdentifier>{96E338A9-AF73-3051-ABFC-229C4665AD77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SequenceTorque\Private\Core">
+      <UniqueIdentifier>{45EA02DC-4FCA-3F4B-B278-029E02E2FE8F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SequenceTorque\Private\Core\BOPGameMode.cpp">
+      <Filter>Source\SequenceTorque\Private\Core</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\SequenceTorque\Private\Core\BOPGameMode.h">
+      <Filter>Source\SequenceTorque\Private\Core</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\SequenceTorque\Private\Core\BOPPlayerController.cpp">
+      <Filter>Source\SequenceTorque\Private\Core</Filter>
+    </ClCompile>
+    <Filter Include="Source\SequenceTorque\Private\Data">
+      <UniqueIdentifier>{C1D8812E-3F16-3045-94DC-02D011554EA9}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SequenceTorque\Private\Data\BoltSequenceData.cpp">
+      <Filter>Source\SequenceTorque\Private\Data</Filter>
+    </ClCompile>
+    <Filter Include="Source\SequenceTorque\Private\Gameplay">
+      <UniqueIdentifier>{23704913-B34A-3C7D-827A-5C6C32CB2271}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SequenceTorque\Private\Gameplay\ABolt.cpp">
+      <Filter>Source\SequenceTorque\Private\Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\SequenceTorque\Private\Gameplay\BOP.cpp">
+      <Filter>Source\SequenceTorque\Private\Gameplay</Filter>
+    </ClCompile>
+    <Filter Include="Source\SequenceTorque\Private\Interfaces">
+      <UniqueIdentifier>{440C0D65-26D4-3960-8AE7-13042F0E1300}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\SequenceTorque\Private\Interfaces\InteractableInterface.cpp">
+      <Filter>Source\SequenceTorque\Private\Interfaces</Filter>
+    </ClCompile>
+    <Filter Include="Source\SequenceTorque\Public">
+      <UniqueIdentifier>{544BD544-5CE5-321A-8236-166C29C8BE1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\SequenceTorque\Public\Core">
+      <UniqueIdentifier>{186419C5-0EA5-3356-AE83-5C814F4D65FC}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SequenceTorque\Public\Core\BOPPlayerController.h">
+      <Filter>Source\SequenceTorque\Public\Core</Filter>
+    </ClInclude>
+    <Filter Include="Source\SequenceTorque\Public\Data">
+      <UniqueIdentifier>{CEFE80FA-80C7-36D6-953F-489FC5D74F2B}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SequenceTorque\Public\Data\BoltSequenceData.h">
+      <Filter>Source\SequenceTorque\Public\Data</Filter>
+    </ClInclude>
+    <Filter Include="Source\SequenceTorque\Public\Gameplay">
+      <UniqueIdentifier>{2AF833BB-A0C9-34DF-A513-EB940236A8FF}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SequenceTorque\Public\Gameplay\ABolt.h">
+      <Filter>Source\SequenceTorque\Public\Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\SequenceTorque\Public\Gameplay\BOP.h">
+      <Filter>Source\SequenceTorque\Public\Gameplay</Filter>
+    </ClInclude>
+    <Filter Include="Source\SequenceTorque\Public\Interfaces">
+      <UniqueIdentifier>{1B789DA6-741F-33A7-970B-47973F17BE2C}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\SequenceTorque\Public\Interfaces\InteractableInterface.h">
+      <Filter>Source\SequenceTorque\Public\Interfaces</Filter>
+    </ClInclude>
     <None Include="..\..\Source\SequenceTorque\SequenceTorque.Build.cs">
       <Filter>Source\SequenceTorque</Filter>
     </None>

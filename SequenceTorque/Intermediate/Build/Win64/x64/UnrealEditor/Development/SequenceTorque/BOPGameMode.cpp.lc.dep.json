@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unrealenginegames\\trainbeyondtest\\sequence torque training\\sequencetorque\\source\\sequencetorque\\private\\core\\bopgamemode.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unrealenginegames\\trainbeyondtest\\sequence torque training\\sequencetorque\\intermediate\\build\\win64\\x64\\sequencetorqueeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\unrealenginegames\\trainbeyondtest\\sequence torque training\\sequencetorque\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\sequencetorque\\definitions.sequencetorque.h",
+            "c:\\unrealenginegames\\trainbeyondtest\\sequence torque training\\sequencetorque\\source\\sequencetorque\\private\\core\\bopgamemode.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "c:\\unrealenginegames\\trainbeyondtest\\sequence torque training\\sequencetorque\\intermediate\\build\\win64\\unrealeditor\\inc\\sequencetorque\\uht\\bopgamemode.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unrealenginegames\\trainbeyondtest\\sequence torque training\\sequencetorque\\source\\sequencetorque\\private\\blowout_preventer.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unrealenginegames\\trainbeyondtest\\sequence torque training\\sequencetorque\\intermediate\\build\\win64\\x64\\sequencetorqueeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\unrealenginegames\\trainbeyondtest\\sequence torque training\\sequencetorque\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\sequencetorque\\definitions.sequencetorque.h",
+            "c:\\unrealenginegames\\trainbeyondtest\\sequence torque training\\sequencetorque\\source\\sequencetorque\\public\\blowout_preventer.h",
+            "c:\\unrealenginegames\\trainbeyondtest\\sequence torque training\\sequencetorque\\intermediate\\build\\win64\\unrealeditor\\inc\\sequencetorque\\uht\\blowout_preventer.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

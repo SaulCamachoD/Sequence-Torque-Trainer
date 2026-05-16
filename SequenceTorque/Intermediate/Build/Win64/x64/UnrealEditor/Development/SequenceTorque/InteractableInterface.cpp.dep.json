@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unrealenginegames\\trainbeyondtest\\sequence torque training\\sequencetorque\\source\\sequencetorque\\private\\interfaces\\interactableinterface.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unrealenginegames\\trainbeyondtest\\sequence torque training\\sequencetorque\\intermediate\\build\\win64\\x64\\sequencetorqueeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\unrealenginegames\\trainbeyondtest\\sequence torque training\\sequencetorque\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\sequencetorque\\definitions.sequencetorque.h",
+            "c:\\unrealenginegames\\trainbeyondtest\\sequence torque training\\sequencetorque\\source\\sequencetorque\\public\\interfaces\\interactableinterface.h",
+            "c:\\unrealenginegames\\trainbeyondtest\\sequence torque training\\sequencetorque\\intermediate\\build\\win64\\unrealeditor\\inc\\sequencetorque\\uht\\interactableinterface.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
