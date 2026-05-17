@@ -1,3 +1,5 @@
-2026/05/15-19:18:14.748 9130 Reusing MANIFEST C:\UnrealEngineGames\TrainBeyondTest\Sequence Torque Training\SequenceTorque\Saved\webcache_6613\Default\Local Storage\leveldb/MANIFEST-000001
-2026/05/15-19:18:14.754 9130 Recovering log #3
-2026/05/15-19:18:14.755 9130 Reusing old log C:\UnrealEngineGames\TrainBeyondTest\Sequence Torque Training\SequenceTorque\Saved\webcache_6613\Default\Local Storage\leveldb/000003.log 
+2026/05/16-16:11:47.742 6030 Reusing MANIFEST C:\UnrealEngineGames\TrainBeyondTest\Sequence Torque Training\SequenceTorque\Saved\webcache_6613\Default\Local Storage\leveldb/MANIFEST-000001
+2026/05/16-16:11:47.747 6030 Recovering log #3
+2026/05/16-16:11:47.751 6030 Level-0 table #3: started
+2026/05/16-16:11:47.925 6030 Level-0 table #3: 60660 bytes OK
+2026/05/16-16:11:47.951 6030 Delete type=0 #3

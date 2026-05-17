@@ -30,7 +30,6 @@ void ABOP::ResetSequence()
 	}
 
 	OnStepAdvanced.Broadcast(CurrentStep);
-	UE_LOG(LogTemp, Log, TEXT("ABOP_Flange: secuencia reiniciada."));
 }
 
 AABolt* ABOP::GetCurrentExpectedBolt() const
@@ -91,8 +90,6 @@ void ABOP::SpawnBolts()
 		BindBoltEvents(NewBolt);
 		SpawnedBolts.Add(NewBolt);
 	}
-
-	UE_LOG(LogTemp, Log, TEXT("ABOP: spawneados %d bolts."), SpawnedBolts.Num());
 }
 
 void ABOP::BindBoltEvents(AABolt* Bolt)
@@ -116,7 +113,6 @@ void ABOP::HandleBoltClicked(AABolt* ClickedBolt)
 		if (IsSequenceCompleted())
 		{
 			OnSequenceCompleted.Broadcast();
-			UE_LOG(LogTemp, Log, TEXT("ABOP_Flange: secuencia completada"));
 		}
 	}
 	else

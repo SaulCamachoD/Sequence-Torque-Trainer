@@ -166,6 +166,61 @@ UEnum* Z_Construct_UEnum_SequenceTorque_EBoltState()
 }
 // ********** End Enum EBoltState ******************************************************************
 
+// ********** Begin Class AABolt Function OnStateChanged *******************************************
+struct ABolt_eventOnStateChanged_Parms
+{
+	EBoltState NewState;
+};
+static FName NAME_AABolt_OnStateChanged = FName(TEXT("OnStateChanged"));
+void AABolt::OnStateChanged(EBoltState NewState)
+{
+	ABolt_eventOnStateChanged_Parms Parms;
+	Parms.NewState=NewState;
+	UFunction* Func = FindFunctionChecked(NAME_AABolt_OnStateChanged);
+	ProcessEvent(Func,&Parms);
+}
+struct Z_Construct_UFunction_AABolt_OnStateChanged_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Bolt Material states" },
+		{ "ModuleRelativePath", "Public/Gameplay/ABolt.h" },
+	};
+#endif // WITH_METADATA
+
+// ********** Begin Function OnStateChanged constinit property declarations ************************
+	static const UECodeGen_Private::FBytePropertyParams NewProp_NewState_Underlying;
+	static const UECodeGen_Private::FEnumPropertyParams NewProp_NewState;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function OnStateChanged constinit property declarations **************************
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+
+// ********** Begin Function OnStateChanged Property Definitions ***********************************
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AABolt_OnStateChanged_Statics::NewProp_NewState_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AABolt_OnStateChanged_Statics::NewProp_NewState = { "NewState", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABolt_eventOnStateChanged_Parms, NewState), Z_Construct_UEnum_SequenceTorque_EBoltState, METADATA_PARAMS(0, nullptr) }; // 2537380881
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AABolt_OnStateChanged_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AABolt_OnStateChanged_Statics::NewProp_NewState_Underlying,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AABolt_OnStateChanged_Statics::NewProp_NewState,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AABolt_OnStateChanged_Statics::PropPointers) < 2048);
+// ********** End Function OnStateChanged Property Definitions *************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AABolt_OnStateChanged_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AABolt, nullptr, "OnStateChanged", 	Z_Construct_UFunction_AABolt_OnStateChanged_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AABolt_OnStateChanged_Statics::PropPointers), 
+sizeof(ABolt_eventOnStateChanged_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AABolt_OnStateChanged_Statics::Function_MetaDataParams), Z_Construct_UFunction_AABolt_OnStateChanged_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(ABolt_eventOnStateChanged_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_AABolt_OnStateChanged()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AABolt_OnStateChanged_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+// ********** End Class AABolt Function OnStateChanged *********************************************
+
 // ********** Begin Class AABolt Function ResetBolt ************************************************
 struct Z_Construct_UFunction_AABolt_ResetBolt_Statics
 {
@@ -432,6 +487,7 @@ struct Z_Construct_UClass_AABolt_Statics
 	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_AABolt_OnStateChanged, "OnStateChanged" }, // 3545607319
 		{ &Z_Construct_UFunction_AABolt_ResetBolt, "ResetBolt" }, // 752739580
 		{ &Z_Construct_UFunction_AABolt_SetHighlighted, "SetHighlighted" }, // 1829354614
 		{ &Z_Construct_UFunction_AABolt_ShowError, "ShowError" }, // 136329046
@@ -454,7 +510,7 @@ const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AAB
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AABolt_Statics::NewProp_BoltMesh = { "BoltMesh", nullptr, (EPropertyFlags)0x01240800000a001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AABolt, BoltMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_BoltMesh_MetaData), NewProp_BoltMesh_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AABolt_Statics::NewProp_NutMesh = { "NutMesh", nullptr, (EPropertyFlags)0x01240800000a001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AABolt, NutMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NutMesh_MetaData), NewProp_NutMesh_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AABolt_Statics::NewProp_InteractionSphere = { "InteractionSphere", nullptr, (EPropertyFlags)0x01240800000a001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AABolt, InteractionSphere), Z_Construct_UClass_USphereComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InteractionSphere_MetaData), NewProp_InteractionSphere_MetaData) };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AABolt_Statics::NewProp_NumberWidget = { "NumberWidget", nullptr, (EPropertyFlags)0x01240800000a001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AABolt, NumberWidget), Z_Construct_UClass_UWidgetComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NumberWidget_MetaData), NewProp_NumberWidget_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AABolt_Statics::NewProp_NumberWidget = { "NumberWidget", nullptr, (EPropertyFlags)0x012408000008001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AABolt, NumberWidget), Z_Construct_UClass_UWidgetComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NumberWidget_MetaData), NewProp_NumberWidget_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AABolt_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AABolt_Statics::NewProp_TighteningOrder,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AABolt_Statics::NewProp_CurrentState_Underlying,
@@ -515,10 +571,10 @@ struct Z_CompiledInDeferFile_FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torq
 		{ EBoltState_StaticEnum, TEXT("EBoltState"), &Z_Registration_Info_UEnum_EBoltState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2537380881U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AABolt, AABolt::StaticClass, TEXT("AABolt"), &Z_Registration_Info_UClass_AABolt, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AABolt), 3006708372U) },
+		{ Z_Construct_UClass_AABolt, AABolt::StaticClass, TEXT("AABolt"), &Z_Registration_Info_UClass_AABolt, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AABolt), 3174241006U) },
 	};
 }; // Z_CompiledInDeferFile_FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Public_Gameplay_ABolt_h__Script_SequenceTorque_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Public_Gameplay_ABolt_h__Script_SequenceTorque_2604491096{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Public_Gameplay_ABolt_h__Script_SequenceTorque_3310717948{
 	TEXT("/Script/SequenceTorque"),
 	Z_CompiledInDeferFile_FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Public_Gameplay_ABolt_h__Script_SequenceTorque_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Public_Gameplay_ABolt_h__Script_SequenceTorque_Statics::ClassInfo),
 	nullptr, 0,

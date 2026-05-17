@@ -1,9 +1,0 @@
-[24616:6052:0515/181834.193:WARNING:chrome_main_delegate.cc(745)] This is Chrome version 128.0.6613.138 (not a warning)
-[24616:20444:0515/181834.231:ERROR:google_update_settings.cc(265)] Failed opening key Software\Chromium to set usagestats; result: 5
-[24616:6052:0515/181834.250:WARNING:account_consistency_mode_manager.cc(77)] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
-[2096:39324:0515/181838.887:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame 5-5BD9C74C37D9E8710B7F9A1FD8E86DD6 will be ignored
-[20752:37892:0515/181840.894:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
-[24616:16276:0515/181841.017:ERROR:cast_crl.cc(443)] CRL - Verification failed.
-[20752:37892:0515/181841.557:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
-[20752:37892:0515/181851.279:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -107
-[20752:37892:0515/181906.199:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100

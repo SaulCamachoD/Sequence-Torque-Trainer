@@ -36,7 +36,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "BOP|Config")
 	TSubclassOf<AABolt> BoltClass;
 
-	// ===== Delegates =====
+	// Delegates 
 
 	UPROPERTY(BlueprintAssignable, Category = "BOP|Events")
 	FOnSequenceCompleted OnSequenceCompleted;

@@ -69,7 +69,13 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
 	TObjectPtr<USphereComponent> InteractionSphere;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Components")
 	TObjectPtr<UWidgetComponent> NumberWidget;
 	
+	UFUNCTION(BlueprintImplementableEvent, Category = "Bolt Material states")
+	void OnStateChanged(EBoltState NewState);
+	
+	
+private:
+	EBoltState PreErrorState = EBoltState::Pending;
 };

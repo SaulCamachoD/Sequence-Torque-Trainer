@@ -27,10 +27,6 @@ void ABOPPlayerController::BeginPlay()
 		{
 			Subsystem->AddMappingContext(DefaultMappingContext, 0);
 		}
-		else
-		{
-			UE_LOG(LogTemp, Warning, TEXT("ABOPPlayerController: DefaultMappingContext no asignado."));
-		}
 	}
 }
 
@@ -79,7 +75,6 @@ void ABOPPlayerController::LeftClick(const FInputActionValue& Value)
 
 	if (HitActor->Implements<UInteractableInterface>())
 	{	
-		UE_LOG(LogTemp, Warning, TEXT("Click! Actor: %s"), HitActor ? *HitActor->GetName() : TEXT("ninguno"));
 		IInteractableInterface::Execute_Interact(HitActor, this);
 	}
 }

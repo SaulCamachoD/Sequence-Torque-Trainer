@@ -16,6 +16,7 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class AABolt;
+enum class EBoltState : uint8;
 
 // ********** Begin Delegate FOnBoltClicked ********************************************************
 #define FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Public_Gameplay_ABolt_h_8_DELEGATE \
@@ -39,6 +40,7 @@ SEQUENCETORQUE_API void FOnBoltTightened_DelegateWrapper(const FMulticastScriptD
 	DECLARE_FUNCTION(execTighten);
 
 
+#define FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Public_Gameplay_ABolt_h_28_CALLBACK_WRAPPERS
 struct Z_Construct_UClass_AABolt_Statics;
 SEQUENCETORQUE_API UClass* Z_Construct_UClass_AABolt_NoRegister();
 
@@ -69,6 +71,7 @@ public: \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Public_Gameplay_ABolt_h_28_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Public_Gameplay_ABolt_h_28_CALLBACK_WRAPPERS \
 	FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Public_Gameplay_ABolt_h_28_INCLASS_NO_PURE_DECLS \
 	FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Public_Gameplay_ABolt_h_28_ENHANCED_CONSTRUCTORS \
 private: \

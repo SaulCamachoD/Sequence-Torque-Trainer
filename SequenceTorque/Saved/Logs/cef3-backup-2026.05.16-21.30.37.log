@@ -1,0 +1,10 @@
+[1020:11256:0516/161147.036:WARNING:chrome_main_delegate.cc(745)] This is Chrome version 128.0.6613.138 (not a warning)
+[1020:28060:0516/161147.321:ERROR:google_update_settings.cc(265)] Failed opening key Software\Chromium to set usagestats; result: 5
+[1020:11256:0516/161147.462:WARNING:account_consistency_mode_manager.cc(77)] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
+[18424:18784:0516/161153.281:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame 5-B93F1B88960EDA5E158ADDF77CB6D4F2 will be ignored
+[1800:30868:0516/161154.958:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[1800:30868:0516/161155.621:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[1020:2468:0516/161155.726:ERROR:cast_crl.cc(443)] CRL - Verification failed.
+[1800:30868:0516/161207.279:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[1800:30868:0516/161217.131:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[1020:11256:0516/163037.245:ERROR:device_event_log_impl.cc(196)] [16:30:37.039] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: No se ha encontrado el elemento. (0x490)

@@ -62,7 +62,7 @@ struct Z_Construct_UClass_UBoltSequenceData_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Radius_MetaData[] = {
 		{ "Category", "Layout" },
-		{ "ClampMin", "10.0" },
+		{ "ClampMin", "8.0" },
 		{ "ModuleRelativePath", "Public/Data/BoltSequenceData.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BoltHeight_MetaData[] = {
@@ -161,10 +161,10 @@ UBoltSequenceData::~UBoltSequenceData() {}
 struct Z_CompiledInDeferFile_FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Public_Data_BoltSequenceData_h__Script_SequenceTorque_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UBoltSequenceData, UBoltSequenceData::StaticClass, TEXT("UBoltSequenceData"), &Z_Registration_Info_UClass_UBoltSequenceData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBoltSequenceData), 1221471576U) },
+		{ Z_Construct_UClass_UBoltSequenceData, UBoltSequenceData::StaticClass, TEXT("UBoltSequenceData"), &Z_Registration_Info_UClass_UBoltSequenceData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBoltSequenceData), 972722562U) },
 	};
 }; // Z_CompiledInDeferFile_FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Public_Data_BoltSequenceData_h__Script_SequenceTorque_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Public_Data_BoltSequenceData_h__Script_SequenceTorque_1000298977{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Public_Data_BoltSequenceData_h__Script_SequenceTorque_2432090365{
 	TEXT("/Script/SequenceTorque"),
 	Z_CompiledInDeferFile_FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Public_Data_BoltSequenceData_h__Script_SequenceTorque_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Public_Data_BoltSequenceData_h__Script_SequenceTorque_Statics::ClassInfo),
 	nullptr, 0,

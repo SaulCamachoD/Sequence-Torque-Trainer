@@ -3,7 +3,6 @@
 #include "Components/SphereComponent.h"
 #include "Components/WidgetComponent.h"
 
-// Sets default values
 AABolt::AABolt()
 {
 	PrimaryActorTick.bCanEverTick = false;
@@ -49,41 +48,53 @@ void AABolt::Tighten()
 {
 	if (CurrentState == EBoltState::Tightened)return;
 	CurrentState = EBoltState::Tightened;
+	OnStateChanged(CurrentState);
 	OnBoltTightened.Broadcast();
 }
 
 void AABolt::ShowError()
 {
-	if (CurrentState == EBoltState::Tightened)return;
-	const EBoltState PreviousState = CurrentState;
+	if (CurrentState == EBoltState::Tightened) return;
+
+	PreErrorState = CurrentState;
 	CurrentState = EBoltState::Error;
-	
+	OnStateChanged(CurrentState);
+
 	FTimerHandle ResetTimer;
 	GetWorldTimerManager().SetTimer(
 		ResetTimer,
-		[this, PreviousState]()
+		[this]()
 		{
 			if (CurrentState == EBoltState::Error)
 			{
-				CurrentState = PreviousState;
+				CurrentState = PreErrorState;
+				OnStateChanged(CurrentState);
 			}
 		},
 		0.5f,
 		false
-	);
+		);
 }
 
 void AABolt::SetHighlighted(bool bHighlighted)
 {
 	if (CurrentState == EBoltState::Tightened) return;
 	
+	if (CurrentState == EBoltState::Error)
+	{
+		PreErrorState = bHighlighted ? EBoltState::Active : EBoltState::Pending;
+		return;
+	}
+
 	if (bHighlighted && CurrentState == EBoltState::Pending)
 	{
 		CurrentState = EBoltState::Active;
+		OnStateChanged(CurrentState);
 	}
 	else if (!bHighlighted && CurrentState == EBoltState::Active)
 	{
 		CurrentState = EBoltState::Pending;
+		OnStateChanged(CurrentState);
 	}
 	
 }
@@ -91,6 +102,8 @@ void AABolt::SetHighlighted(bool bHighlighted)
 void AABolt::ResetBolt()
 {
 	CurrentState = EBoltState::Pending;
+	PreErrorState = EBoltState::Pending;
+	OnStateChanged(CurrentState);
 }
 
 void AABolt::Interact_Implementation(AActor* Object)

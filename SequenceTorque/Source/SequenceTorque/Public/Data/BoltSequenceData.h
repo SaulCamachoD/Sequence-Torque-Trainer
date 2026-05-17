@@ -15,7 +15,7 @@ class SEQUENCETORQUE_API UBoltSequenceData : public UPrimaryDataAsset
 	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Sequence")
 	TArray<int32> TighteningOrder;
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Layout", meta = (ClampMin = "10.0"))
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Layout", meta = (ClampMin = "8.0"))
 	float Radius;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Layout")

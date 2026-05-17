@@ -15,12 +15,45 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AABolt;
+
+// ********** Begin Delegate FOnStepChanged ********************************************************
+#define FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Private_Core_BOPGameMode_h_11_DELEGATE \
+SEQUENCETORQUE_API void FOnStepChanged_DelegateWrapper(const FMulticastScriptDelegate& OnStepChanged, int32 NewStep);
+
+
+// ********** End Delegate FOnStepChanged **********************************************************
+
+// ********** Begin Delegate FOnErrorsChanged ******************************************************
+#define FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Private_Core_BOPGameMode_h_12_DELEGATE \
+SEQUENCETORQUE_API void FOnErrorsChanged_DelegateWrapper(const FMulticastScriptDelegate& OnErrorsChanged, int32 NewErrors);
+
+
+// ********** End Delegate FOnErrorsChanged ********************************************************
+
+// ********** Begin Delegate FOnGameCompleted ******************************************************
+#define FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Private_Core_BOPGameMode_h_13_DELEGATE \
+SEQUENCETORQUE_API void FOnGameCompleted_DelegateWrapper(const FMulticastScriptDelegate& OnGameCompleted, float TotalTime, int32 TotalErrors);
+
+
+// ********** End Delegate FOnGameCompleted ********************************************************
 
 // ********** Begin Class ABOPGameMode *************************************************************
+#define FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Private_Core_BOPGameMode_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execHandleSequenceCompleted); \
+	DECLARE_FUNCTION(execHandleWrongBolt); \
+	DECLARE_FUNCTION(execHandleStepAdvanced); \
+	DECLARE_FUNCTION(execIsGameActive); \
+	DECLARE_FUNCTION(execGetCurrentStep); \
+	DECLARE_FUNCTION(execGetErrorCount); \
+	DECLARE_FUNCTION(execGetElapsedTime); \
+	DECLARE_FUNCTION(execRestartSequence);
+
+
 struct Z_Construct_UClass_ABOPGameMode_Statics;
 SEQUENCETORQUE_API UClass* Z_Construct_UClass_ABOPGameMode_NoRegister();
 
-#define FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Private_Core_BOPGameMode_h_13_INCLASS_NO_PURE_DECLS \
+#define FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Private_Core_BOPGameMode_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABOPGameMode(); \
 	friend struct ::Z_Construct_UClass_ABOPGameMode_Statics; \
@@ -31,7 +64,7 @@ public: \
 	DECLARE_SERIALIZER(ABOPGameMode)
 
 
-#define FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Private_Core_BOPGameMode_h_13_ENHANCED_CONSTRUCTORS \
+#define FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Private_Core_BOPGameMode_h_19_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ABOPGameMode(ABOPGameMode&&) = delete; \
 	ABOPGameMode(const ABOPGameMode&) = delete; \
@@ -41,12 +74,13 @@ public: \
 	NO_API virtual ~ABOPGameMode();
 
 
-#define FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Private_Core_BOPGameMode_h_10_PROLOG
-#define FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Private_Core_BOPGameMode_h_13_GENERATED_BODY \
+#define FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Private_Core_BOPGameMode_h_16_PROLOG
+#define FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Private_Core_BOPGameMode_h_19_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Private_Core_BOPGameMode_h_13_INCLASS_NO_PURE_DECLS \
-	FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Private_Core_BOPGameMode_h_13_ENHANCED_CONSTRUCTORS \
+	FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Private_Core_BOPGameMode_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Private_Core_BOPGameMode_h_19_INCLASS_NO_PURE_DECLS \
+	FID_UnrealEngineGames_TrainBeyondTest_Sequence_Torque_Training_SequenceTorque_Source_SequenceTorque_Private_Core_BOPGameMode_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
